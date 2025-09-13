@@ -24,3 +24,114 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+h1 {
+  scroll-margin: 5rem; /* scroll-m-20 */
+  text-align: center; /* text-center */
+  font-size: 2.25rem; /* text-4xl */
+  font-weight: 800; /* font-extrabold */
+  letter-spacing: -0.02em; /* tracking-tight */
+  text-wrap: balance; /* text-balance (propiedad experimental) */
+}
+
+h2 {
+  scroll-margin: 5rem; /* scroll-m-20 */
+  border-bottom: 1px solid #e5e7eb; /* border-b (tailwind gray-200) */
+  padding-bottom: 0.5rem; /* pb-2 */
+  font-size: 1.875rem; /* text-3xl */
+  font-weight: 600; /* font-semibold */
+  letter-spacing: -0.01em; /* tracking-tight */
+  margin-top: 0; /* first:mt-0 */
+}
+
+h3 {
+  scroll-margin: 5rem; /* scroll-m-20 */
+  font-size: 1.5rem; /* text-2xl */
+  font-weight: 600; /* font-semibold */
+  letter-spacing: -0.01em; /* tracking-tight */
+}
+
+
+h4 {
+  scroll-margin: 5rem; /* scroll-m-20 */
+  font-size: 1.25rem; /* text-xl */
+  font-weight: 600; /* font-semibold */
+  letter-spacing: -0.01em; /* tracking-tight */
+}
+
+/* paragraph */
+
+p {
+  line-height: 1.75rem; /* leading-7 */
+}
+
+p:not(:first-child) {
+  margin-top: 1.5rem; /* mt-6 */
+}
+
+/* blockquote */
+
+blockquote {
+  margin-top: 1.5rem; /* mt-6 */
+  border-left: 2px solid #e5e7eb; /* border-l-2 (tailwind gray-200) */
+  padding-left: 1.5rem; /* pl-6 */
+  font-style: italic; /* italic */
+}
+
+/* list */
+ul {
+  margin-top: 1.5rem; /* mt-6 */
+  margin-bottom: 1.5rem; /* mb-6 */
+  margin-left: 1.5rem; /* ml-6 */
+  list-style-type: disc; /* list-disc */
+  padding-left: 1.5rem; /* para asegurar el espacio del marcador */
+}
+
+ul > li {
+  margin-top: 0.5rem; /* mt-2 */
+}
+
+ul > li:first-child {
+  margin-top: 0; /* El primer li no debe tener margen superior */
+}
+
+
+/* lead */
+
+.lead {
+  font-size: 1.25rem; /* text-xl */
+  line-height: 1.75rem; /* leading-7 */
+  color: #6b7280; /* text-muted-foreground */
+}
+
+/* muted */
+
+.muted {
+  color: #6b7280; /* text-muted-foreground */
+  font-size: 0.875rem; /* text-sm */
+}
+
+
+/* Phone */
+
+.phone {
+  background-image: url("/iphone.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 10;
+}
+
+.demo{
+  background-image: url("/demo.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+}
