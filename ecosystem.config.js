@@ -3,7 +3,7 @@ module.exports = {
     {
       name: "mail-service",
       script: "npm",
-      args: "start",
+      args: "start -- -H 0.0.0.0",
       cwd: "/home/ll-raspi/source/mail-service",
       watch: true,
       env: {
